@@ -21,7 +21,7 @@ The song and all tracks broken down into bass, drums, piano, vocals and other.
 ## Example
 
 ```
-./download.ps1 -url https://www.youtube.com/watch?v=8SPtkjMUkGk -title test -stems 2
+breakdown.ps1 -url https://www.youtube.com/watch?v=8SPtkjMUkGk -title test -stems 2
 ```
 
 `-stems` can be 2, 4 or 5
