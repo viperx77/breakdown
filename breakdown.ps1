@@ -1,5 +1,5 @@
 #!/bin/pwsh
-param($url, $title, $stems="5")
+param([string][Parameter(Position=0,mandatory=$true)]$url, [string]$title="test", $stems="5")
 $tmp = [System.IO.Path]::GetTempPath()
 & "docker" "run" "-it" "-v" "$($tmp):/tmp/output" "-v" "$($tmp):/models" "breakdown" $url "$($stems)stems" 
 
