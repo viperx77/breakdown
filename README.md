@@ -1,5 +1,5 @@
 # Breakdown
-A tool to download music and break it down into separate audio tracks
+A tool to download music and break it down into separate audio tracks. This is just a nice docker wrapper around youtube-dl and spleeter.
 
 ## Requires
 
@@ -10,6 +10,7 @@ Why powershell to invoke the docker image? So you can run it from Linux or Windo
 
 ## Build
 
+Build the docker image.
 ```
 ./build.sh
 ```
