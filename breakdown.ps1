@@ -1,7 +1,7 @@
 #!/bin/pwsh
-param([string][Parameter(Position=0,mandatory=$true)]$url, [string]$title="test", $stems="5")
+param([string][Parameter(Position=0,mandatory=$true)]$url, [string]$title="audio", $stems="5")
 $tmp = [System.IO.Path]::GetTempPath()
-& "docker" "run" "-it" "-v" "$($tmp):/tmp/output" "-v" "$($tmp):/models" "breakdown" $url "$($stems)stems" 
+& "docker" "run" "-it" "-v" "$($tmp):/tmp/output" "-v" "$($tmp):/models" "marklindell/breakdown" $url "$($stems)stems" 
 
 Copy-Item -Path "$($tmp)/audio.mp3" -Destination ./$title.mp3
 Copy-Item -Path "$($tmp)/audio.info.json" -Destination ./"$($title).json"

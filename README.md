@@ -8,13 +8,6 @@ A tool to download music and break it down into separate audio tracks. This is j
 
 Why powershell to invoke the docker image? So you can run it from Linux or Windoze.
 
-## Build
-
-Build the docker image.
-```
-./build.sh
-```
-
 ## Output
 
 The song and all tracks broken down into bass, drums, piano, vocals and other.
@@ -59,3 +52,8 @@ The following files will created
 {title}.json
 ```
 
+## Build locally
+
+```
+./build.sh
+```
